@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #ffbe76;
+    justify-content: space-around;
+    align-items: center;
+}
+.card {
+    /* необходимо задать глубину отображения 3-Д объекта */
+    perspective: 1000px;
+    /* обязательно для работы эфектов 3-Д */
+    transform-style: preserve-3d;
+}
+.card-item {
+    background-color: #fff;
+    height: 250px;
+    width: 250px;
+    transition: transform 0.2s;
+}
